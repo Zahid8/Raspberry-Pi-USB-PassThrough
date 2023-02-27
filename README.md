@@ -3,31 +3,31 @@
 
 ### On the server side(laptop):
 
-```sudo apt-get install linux-tools-generic```
+1. ```sudo apt-get install linux-tools-generic```
 
-```sudo modprobe usbip_host```
+2. ```sudo modprobe usbip_host```
 
-```sudo nano /etc/modules```
+3. ```sudo nano /etc/modules```
 
-add ```usbip_host``` to the end of texts
+4. add ```usbip_host``` to the end of texts
 
-```lsusb``` to see a list of attached USB devices
+5. ``lsusb``` to see a list of attached USB devices
 
-```sudo usbip list -p -l```
+6. ```sudo usbip list -p -l```
 
-```sudo usbip bind --busid=``` enter busid from the above list command
+7. ```sudo usbip bind --busid=``` enter busid from the above list command
 
-```sudo usbipd```
+8. ```sudo usbipd```
 
 ### On the client side(rpi):
 
-```wget http://raspbian.mirror.net.in/raspbian/raspbian/pool/main/l/linux/usbip_2.0+5.10.158-2+rpi1_armhf.deb```
+1. ```wget http://raspbian.mirror.net.in/raspbian/raspbian/pool/main/l/linux/usbip_2.0+5.10.158-2+rpi1_armhf.deb```
 
-```sudo modprobe vhci-hcd```
+2. ```sudo modprobe vhci-hcd```
 
-```sudo nano /etc/modules```
+3. ```sudo nano /etc/modules```
 
-add ```vhci-hcd``` to the end of texts
+4. add ```vhci-hcd``` to the end of texts
 
-```sudo usbip attach -r ip -b busid```
+5. ```sudo usbip attach -r ip -b busid```
 
