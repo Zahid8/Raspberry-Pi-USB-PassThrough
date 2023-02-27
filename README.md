@@ -11,7 +11,7 @@
 
 4. add ```usbip_host``` to the end of texts
 
-5. ``lsusb``` to see a list of attached USB devices
+5. ```lsusb``` to see a list of attached USB devices
 
 6. ```sudo usbip list -p -l```
 
