@@ -29,5 +29,5 @@ add ```usbip_host``` to the end of texts
 
 add ```vhci-hcd``` to the end of texts
 
-```sudo usbip attach -r ipa-b busid```
+```sudo usbip attach -r ip -b busid```
 
