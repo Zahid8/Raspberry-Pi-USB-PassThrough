@@ -1,7 +1,7 @@
 # USB forwarding(USB IP)
 
 
-### On the server side(laptop):
+### On the server side(linux):
 
 1. ```sudo apt-get install linux-tools-generic```
 
