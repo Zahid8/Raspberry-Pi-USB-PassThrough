@@ -23,11 +23,13 @@
 
 1. ```wget http://raspbian.mirror.net.in/raspbian/raspbian/pool/main/l/linux/usbip_2.0+5.10.158-2+rpi1_armhf.deb```
 
-2. ```sudo modprobe vhci-hcd```
+2. ```sudo apt install ./usbip_2.0+5.10.158-2+rpi1_armhf.deb```
 
-3. ```sudo nano /etc/modules```
+3. ```sudo modprobe vhci-hcd```
 
-4. add ```vhci-hcd``` to the end of texts
+4. ```sudo nano /etc/modules```
 
-5. ```sudo usbip attach -r ip -b busid```
+5. add ```vhci-hcd``` to the end of texts
+
+6. ```sudo usbip attach -r ip -b busid```
 
