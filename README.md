@@ -15,7 +15,7 @@
 
 6. ```sudo usbip list -p -l```
 
-7. ```sudo usbip bind --busid=``` enter busid from the above list command
+7. ```sudo usbip bind --busid="Bus ID"``` enter busid from the above list command
 
 8. ```sudo usbipd```
 
@@ -31,5 +31,5 @@
 
 5. add ```vhci-hcd``` to the end of texts
 
-6. ```sudo usbip attach -r ip -b busid```
+6. ```sudo usbip attach -r "IP Address" -b "Bus ID"```
 
